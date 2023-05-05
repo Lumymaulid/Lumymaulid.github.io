@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <style>
+       /* Style the body */
+       body {
+          font-family: 'Times New Roman', Times, serif;
+          margin: 0;
+        }
+    
+        /* Style the header */
+        .header {
+          padding: 20px;
+          background-color: #bca41a;
+          color: white;
+        }
+        /* Style the navigation bar */
+        .navbar {
+          display: flex;
+          background-color: #333;
+        }
+         /* Style the navigation links */
+         .navbar a {
+          color: white;
+          padding: 14px 20px;
+          text-decoration: none;
+        }
+    
+        /* Change color on hover */
+        .navbar a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+    
+     
+      #map {
+        height: 50px;
+        width: 500px;
+        margin-top: 50px;
+        float: right;
+      }
+      form {
+        display: flex;
+        flex-direction: column;        
+        margin: 0 auto;
+        position: absolute;
+        top: 20%;
+        width: 40%;
+        padding: 20px;
+        border: 2px solid white;
+      }
+      label,
+      input,
+      textarea {
+        margin-bottom: 10px;
+        width: 50%;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        background-color:rgb(182, 182, 7);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+      span{
+        
+        color: black;
+        font-size: 22px;
+        text-align: center;
+        font-weight: bold;
+        padding: 20px;
+      }
+      input[type="button"]{
+        background-color: green;
+        width: 100%;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+      a{
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+        font-size: 20px;
+      }
+      /* Style the footer */
+      .footer {
+          padding: 10px;
+          background-color: #bca41a;
+        
+          color: white;
+          text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <fieldset style="width: 1000px; height: 800px;">
+      <div class="header">
+        <h1 style="text-align: center;"> My Curiculum Vitae(CV)</h1>
+       
+      </div>
+      
+      
+      <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d63463.82497044486!2d39.265073385371714!3d-6.199025078103579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m3!3m2!1d-6.1991119999999995!2d39.306273499999996!4m0!5e0!3m2!1ssw!2stz!4v1683208700018!5m2!1ssw!2stz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      
+      <form>
+        <div class="navbar">
+          <a href="log.html">Go to Login</a>
+          <a href="index.html">Home</a> <br>
+         
+        
+      </div>
+        
+       
+        <span>Fill in Information</span>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" required></textarea>
+        <input type="submit" value="Submit">
+        
+      </form>
+     <!-- <script src=""></script>-->
+      <script src="contact.js"></script>
+    </fieldset>
+    
+  </body>
+</html>
